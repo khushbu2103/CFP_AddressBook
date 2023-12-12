@@ -34,6 +34,7 @@ public class AddressBookMain {
         for (Contact contact: arrayList)
         {
             System.out.println(contact);
+
         }
     }
     public void EditContact()
@@ -78,5 +79,23 @@ public class AddressBookMain {
                 System.out.println("Contact details no found");
         }
     }
-    
+    public void DeleteContacts()
+    {
+        for (Contact contact: arrayList)
+        {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter first name you want to delete");
+            String firstNameToDelete = sc.next();
+//            System.out.println("Enter last name you want to delete");
+//            String lastNameToDelete = sc.next();
+
+            if(contact !=null && contact.getFirstName().equals(firstNameToDelete) )
+            {
+                arrayList.remove(contact);
+                System.out.println("Delete operation is successfully done");
+                break;
+            }
+
+        }
+    }
 }

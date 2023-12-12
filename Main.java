@@ -36,10 +36,10 @@ public class Main {
                     ob.EditContact();
                     break;
 //
-//                case 4:
-//                    System.out.println("Delete Contacts:");
-//                    ob.deleteContact();
-//                    break;
+                case 4:
+                    System.out.println("Delete Contacts:");
+                    ob.DeleteContacts();
+                    break;
 
             }
         }
