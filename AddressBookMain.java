@@ -74,9 +74,9 @@ public class AddressBookMain {
                 contact.setPhoneNumber(newPhoneNumber);
                 contact.setEmail(newEmail);
             }
+            else
+                System.out.println("Contact details no found");
         }
-
-
-
     }
+    
 }
