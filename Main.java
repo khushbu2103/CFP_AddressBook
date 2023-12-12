@@ -23,9 +23,7 @@ public class Main {
             switch (option) {
                 case 1:
                     System.out.println("Add Contacts:");
-
-                        ob.AddContact();
-
+                    ob.AddContact();
                     break;
 
                 case 2:
@@ -33,10 +31,10 @@ public class Main {
                     ob.Display();
                     break;
 
-//                case 3:
-//                    System.out.println("Update Contacts:");
-//                    ob.updateContacts();
-//                    break;
+                case 3:
+                    System.out.println("Update Contacts:");
+                    ob.EditContact();
+                    break;
 //
 //                case 4:
 //                    System.out.println("Delete Contacts:");

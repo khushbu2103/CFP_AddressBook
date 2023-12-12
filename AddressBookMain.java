@@ -36,5 +36,47 @@ public class AddressBookMain {
             System.out.println(contact);
         }
     }
+    public void EditContact()
+    {
+        for (Contact contact : arrayList)
+        {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter first name you want to edit");
+            String firstNameToEdit = sc.next();
+            System.out.println("Enter last name you want to edit");
+            String lastNameToEdit = sc.next();
 
+            if(contact !=null && contact.getFirstName().equals(firstNameToEdit) && contact.getLastName().equals(lastNameToEdit) )
+            {
+                System.out.println("Enter contact's new first name");
+                String newFirstName = sc.next();
+                System.out.println("Enter contact's new last name");
+                String newLastName = sc.next();
+                System.out.println("Enter contact's new address");
+                String newAddress = sc.next();
+                System.out.println("Enter contact's new city");
+                String newCity = sc.next();
+                System.out.println("Enter contact's new state");
+                String newState = sc.next();
+                System.out.println("Enter contact's new zipCode");
+                String newZipCode = sc.next();
+                System.out.println("Enter contact's new phoneNumber");
+                String newPhoneNumber = sc.next();
+                System.out.println("Enter contact's new email");
+                String newEmail = sc.next();
+
+                contact.setFirstName(newFirstName);
+                contact.setLastName(newLastName);
+                contact.setAddress(newAddress);
+                contact.setCity(newCity);
+                contact.setState(newState);
+                contact.setZipCode(newZipCode);
+                contact.setPhoneNumber(newPhoneNumber);
+                contact.setEmail(newEmail);
+            }
+        }
+
+
+
+    }
 }
