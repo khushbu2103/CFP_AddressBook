@@ -86,9 +86,6 @@ public class AddressBookMain {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter first name you want to delete");
             String firstNameToDelete = sc.next();
-//            System.out.println("Enter last name you want to delete");
-//            String lastNameToDelete = sc.next();
-
             if(contact !=null && contact.getFirstName().equals(firstNameToDelete) )
             {
                 arrayList.remove(contact);
