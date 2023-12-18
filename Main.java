@@ -9,7 +9,9 @@ public class Main {
 
         System.out.println("Hello world");
 
-        AddressBookMain ob = new AddressBookMain();
+        AddressBookMain ob = new AddressBookMain("khushi");
+        AddressBookManager ob2 = new AddressBookManager();
+        ob2.MultipleAddressBook();
         Scanner sc = new Scanner(System.in);
 
         do {

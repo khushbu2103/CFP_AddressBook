@@ -5,6 +5,11 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class AddressBookMain {
+    String name;
+
+    public AddressBookMain(String name) {
+        this.name = name;
+    }
 
     ArrayList<Contact> arrayList = new ArrayList<>();
     public void AddContact()
